@@ -1,0 +1,57 @@
+/* 
+Check out Kevin Powell's Video!
+Customizable typewriter animation with CSS
+https://www.youtube.com/watch?v=w1nhwUGsG6M
+*/
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@500&display=swap');
+:root {
+  --bg-color: #39393c;
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 11;
+}
+
+.typewriter {
+  position: relative;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+  width: max-content;
+}
+
+.typewriter::before,
+.typewriter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewriter::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.typewriter::after {
+  width: 0.125em;
+  background: white;
+  animation: 
+    typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
