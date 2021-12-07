@@ -6,9 +6,9 @@ https://www.youtube.com/watch?v=w1nhwUGsG6M
 /* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@500&display=swap');
 :root {
-  --bg-color: #39393c;
+  --bg-color: #27272a;
   --typewriterSpeed: 3s;
-  --typewriterCharacters: 11;
+  --typewriterCharacters: 12;
 }
 
 .typewriter {

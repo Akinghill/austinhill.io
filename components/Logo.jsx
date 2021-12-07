@@ -27,7 +27,6 @@ const Logo = () => {
             textDecoration="none"
             bgGradient="linear(to-r, green.100, green.300)"
             bgClip="text"
-            className="typewriter"
             fontSize="2xl"
           >
             {SiteData.title}

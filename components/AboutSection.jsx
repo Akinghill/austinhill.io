@@ -6,19 +6,11 @@ import { SiteData } from '@/data/SiteData';
 export default function AboutSection() {
   const { work } = SiteData;
   return (
-    <Box w="full">
-      <Heading
-        as="h2"
-        mb={4}
-        px="2"
-        shadow="text"
-        display="inline-block"
-      >
+    <Box w="full" px="2" c>
+      <Heading as="h2" mb={4} shadow="text" display="inline-block">
         More about me
       </Heading>
-      <Text>
-        {SiteData.aboutMeText}
-      </Text>
+      <Text fontSize="lg">{SiteData.aboutMeText}</Text>
     </Box>
   );
 }

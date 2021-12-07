@@ -28,5 +28,5 @@ export const SiteData = {
       link: 'https://eeg.tempurl.host/'
     },
   ],
-  aboutMeText: 'Hello world'
+  aboutMeText: ''
 }

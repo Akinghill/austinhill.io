@@ -15,12 +15,11 @@ export default function Intro() {
             fontWeight="bold"
             bgGradient="linear(to-r, green.100, green.500)"
             bgClip="text"
+            className="typewriter"
           >
             Hello World!
           </Text>
-          <Text fontSize="lg"
-          fontFamily='Open Sans'
-          >
+          <Text fontSize="lg" fontFamily="Open Sans">
             I&apos;m a web developer with a background in 3D art and animation.
             I&apos;m currently working at{' '}
             <Link href="https://banyanlabs.io" isExternal>
